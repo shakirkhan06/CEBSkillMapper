@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;config&apos;&#x0D;&#x0A;- Original project: &apos;CEBSkillMapperFEnd&apos;&#x0D;&#x0A;- Destination element: &apos;config&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.niit.CEBSkillMapperFEnd.config.WebAppInitializer.java&#x0D;&#x0A;     com.niit.CEBSkillMapperFEnd.config.AppConfig.java" description="Copy compilation units" element1="/src\/main\/java&lt;com.niit.CEBSkillMapperFEnd.config{WebAppInitializer.java" element2="/src\/main\/java&lt;com.niit.CEBSkillMapperFEnd.config{AppConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1527312892229" target="/CEBSkillMapperRestFEnd/src/main/java/com/niit/CEBSkillMapperRestFEnd/config" units="2" version="1.0"/>
+</session>

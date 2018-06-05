@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.Dao.ProfileDAO"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.Dao.SkillDAO"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.service.ProfileService"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.model.Profile"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.service.SkillService"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.model.Skills"/>
+<fullyQualifiedTypeName name="com.niit.CEBSkillMapper.Config.ConfigFileProject"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.CorsRegistry"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.junit.After"/>
+</qualifiedTypeNameHistroy>

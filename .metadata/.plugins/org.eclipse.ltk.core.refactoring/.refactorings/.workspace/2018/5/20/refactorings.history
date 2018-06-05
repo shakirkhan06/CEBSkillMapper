@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CEBProjectDemo&apos; to &apos;CEBSillMapperBEnd&apos;" description="Rename resource &apos;CEBProjectDemo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CEBProjectDemo" name="CEBSillMapperBEnd" stamp="1526329444494" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CEBProjectFrontEnd&apos; to &apos;CEBSkillMapperFEnd&apos;" description="Rename resource &apos;CEBProjectFrontEnd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CEBProjectFrontEnd" name="CEBSkillMapperFEnd" stamp="1526329493533" updateReferences="true"/>
+</session>

@@ -1,0 +1,70 @@
+package com.niit.CEBSkillMapperTest;
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.niit.CEBSkillMapper.Config.ConfigFileProject;
+import com.niit.CEBSkillMapper.model.Employee;
+import com.niit.CEBSkillMapper.model.Skills;
+import com.niit.CEBSkillMapper.service.SkillService;
+
+
+@RunWith(SpringRunner.class)
+@SpringJUnitConfig(classes=ConfigFileProject.class)
+public class SkillTest {
+	@Autowired
+private SkillService skillService;
+	
+	private Skills skill;
+	
+	@Before
+	public void setUp() throws Exception {
+		
+		skill=new Skills();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	
+	
+	
+	/*@Test
+	public void testAddSkill()
+	{
+		Skills skill=new Skills();
+		skill.setEmployeeid(109);
+		skill.setStudentsTrained(122);
+		skill.setTeachingHrs(22);
+		skill.setCertifications("ms sql java oracle");
+		skill.setStudentPlaced(4);
+		skill.setSkillName("java,c++,sql");
+		assertEquals("Failed to add the skill",true,skillService.add(skill));
+	}*/
+	@Test
+	public void deleteData()
+	{
+		assertEquals("found",true,skillService.delete(102));
+	}
+	/*@Test
+	public void getAllEmployeeTest()
+	{
+		List<Skills> employeeList = new ArrayList<Skills>();
+		employeeList = skillService.getAllSkills();
+		
+		System.out.println("Employee Name List = "+employeeList);
+		assertEquals("Success", true, employeeList.size()!=0);
+		
+	}*/
+}

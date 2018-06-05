@@ -1,0 +1,59 @@
+package com.niit.CEBSkillMapper.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.niit.CEBSkillMapper.Dao.SkillDAO;
+import com.niit.CEBSkillMapper.model.Skills;
+
+
+
+@Service
+public class SkillServiceImpl implements SkillService {
+	@Autowired
+	private SkillDAO skillDAO;
+
+	@Override
+	public boolean add(Skills skill) {
+		return skillDAO.add(skill);
+	}
+
+	@Override
+	public boolean delete(int employeeid) 
+	{
+
+	return (skillDAO.deleteSkill(employeeid));
+		
+	}
+
+	@Override
+	public boolean update(Skills employee) {
+		// TODO Auto-generated method stub
+		return skillDAO.update(employee);
+	}
+	@Override
+	public Skills getUpdateId(int employeeid) 
+	{
+	   return(skillDAO.getUpdateId(employeeid));
+		
+	}
+	@Override
+	public List<Skills> getAllSkills() {
+		return skillDAO.getAllSkills();
+	}
+
+	/*@Override
+	public List<Skills> SearchSkills(String keywords) {
+		return skillDAO.SearchSkills(keywords);
+	}*/
+	
+	@Override
+	public Skills getEmployeebyId(int employeeid)
+	{
+		 return(skillDAO.getEmployeebyId(employeeid));	
+	}
+	
+
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.130
+D:\CEBSkillMapper\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\18520423.index
+\CEBSkillMapperRestFEnd\src\main\resources
+D:\CEBSkillMapper\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\74251632.index
+\CEBSkillMapperFEnd\src\main\java
+D:\CEBSkillMapper\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3328028234.index
+\CEBProjectFrontEnd\src\main\java

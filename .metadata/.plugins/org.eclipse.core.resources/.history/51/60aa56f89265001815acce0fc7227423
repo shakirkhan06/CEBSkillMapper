@@ -1,0 +1,79 @@
+package com.niit.CEBSkillMapper.Dao;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.niit.CEBSkillMapper.model.Skills;
+
+
+@Repository("skillDAO")
+@Transactional
+public class SkillDAOImpl implements SkillDAO {
+
+	@Autowired
+	private SessionFactory sessionFact;
+	private boolean b = true;
+	@Override
+	public boolean add(Skills skill) {
+		
+		// TODO Auto-generated method stub
+		sessionFact.getCurrentSession().save(skill);
+		return true;
+		
+	}
+
+	
+	@Override
+	public boolean update(Skills employee) {
+		sessionFact.getCurrentSession().update(employee);
+		return true;
+	}
+	
+	@Override
+	public Skills getUpdateId(int employeeid) 
+	{
+		// TODO Auto-generated method stub
+				return sessionFact.getCurrentSession().get(Skills.class,employeeid);
+		
+	}
+	
+	@Override
+	public List<Skills> getAllSkills() {
+		// TODO Auto-generated method stub
+	//	return sessionFact.getCurrentSession().createQuery("from Skills").list();
+		return (List<Skills>) sessionFact.getCurrentSession().createCriteria(Skills.class).list();
+	}
+
+	@Override
+	public List<Skills> SearchSkills(String keywords) {
+		return sessionFact.getCurrentSession().createQuery("from SkillsMaster where skillName like'%"+ keywords +"%'").list();
+	}
+
+	@Override
+	public Skills getEmployeebyId(int employeeid) {
+		return (Skills)sessionFact.getCurrentSession().createQuery("from SkillMaster where employeeid="+employeeid).uniqueResult();
+		// return sessionFactory.getCurrentSession().get(Skills.class, employeeid);
+	}
+
+	@Override
+	public boolean deleteSkill(int employeeid) 
+	{
+		Skills emp1=getEmployeebyId(employeeid);
+		if(emp1!=null)
+		{
+			sessionFact.getCurrentSession().delete(emp1);
+				return true;
+		}
+		else
+			return false;
+		 
+		
+	}
+	
+
+}

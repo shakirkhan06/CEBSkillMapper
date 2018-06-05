@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Jun 05 19:41:08 IST 2018
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\ShakirKhan\\.m2\\repository\\org\\springframework\\spring-web\\5.0.5.RELEASE\\spring-web-5.0.5.RELEASE.jar=WEB-INF/lib/spring-web-5.0.5.RELEASE.jar
+org.eclipse.jst.j2ee.server\:CEBSillMapperBEnd=WEB-INF/lib/CEBSkillMapperBEnd-0.0.1-SNAPSHOT.jar
